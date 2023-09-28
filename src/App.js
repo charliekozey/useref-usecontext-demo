@@ -1,22 +1,18 @@
-import logo from './logo.svg';
+import React, { useState, useRef, useContext } from "react";
+import Container from "./Container"
+import Profile from "./Profile"
+import RefButton from "./RefButton";
+import UserContext from "./context/UserContext";
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Container />
+        <Profile />
+        <RefButton />
       </header>
     </div>
   );
